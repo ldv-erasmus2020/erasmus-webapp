@@ -1,19 +1,16 @@
 import React from 'react';
-import { Router } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+import { BrowserRouter } from 'react-router-dom';
 
 import Routes from './Routes';
-
-const browserHistory = createBrowserHistory();
 
 class App extends React.Component {
 
   render(){
     return (
       <div> 
-        <Router history={browserHistory}>
+        <BrowserRouter>
           <Routes />
-        </Router>
+        </BrowserRouter>
       </div>
     );
   }

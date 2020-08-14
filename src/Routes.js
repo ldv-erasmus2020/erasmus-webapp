@@ -7,16 +7,25 @@ import MainLayout from './Layouts/Main/Main';
 
 //Views
 import HomeView from './Views/Home/Home';
+import MapView from './Views/Map/Map';
 
 const Routes = () => {
     return(
         <Switch>
             
+            <Redirect from="/" to="/home" exact></Redirect>
+
+            <Route path="/home" exact>
+                <MainLayout>
+                    <HomeView />
+                </MainLayout>
+            </Route>
+
             <RouteWithLayout
-                    component={HomeView}
+                    component={MapView}
                     exact
                     layout={MainLayout}
-                    path="/home"
+                    path="/map"
             />
 
         </Switch>

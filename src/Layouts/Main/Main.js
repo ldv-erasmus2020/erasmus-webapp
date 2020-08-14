@@ -58,7 +58,7 @@ const navPages = [
 ];
 
 
-const Main = () => {
+const Main = (props) => {
   const classes = useStyles();
 
   return (
@@ -67,13 +67,14 @@ const Main = () => {
 
         <Toolbar>
           <Menu navPages={navPages} />
-
           <Typography variant="h6" className={classes.title}>
             Erasmus
           </Typography>
         </Toolbar>
 
-      </AppBar>      
+      </AppBar>
+
+      {props.children}    
     </div>
   );
 }

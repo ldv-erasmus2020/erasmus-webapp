@@ -1,0 +1,68 @@
+[
+    {
+        "idcty": "1",
+        "city": "Borgomanero",
+        "codlng": "1",
+        "lat": "45.698747",
+        "long": "8.462415",
+        "descrizione": "Borgomanero \u00e8 un comune italiano della provincia di Novara. \u00c8 la seconda citt\u00e0 della provincia di Novara per popolazione dopo il capoluogo.",
+        "abitanti": "21690",
+        "area": "32.27",
+        "regione": "Piemonte"
+    },
+    {
+        "idcty": "2",
+        "city": "Bad Mergentheim",
+        "codlng": "2",
+        "lat": "49.488537",
+        "long": "9.770416",
+        "descrizione": "Dal 1526 al 1809 fu centro dell'Ordine teutonico.",
+        "abitanti": "22505",
+        "area": "130",
+        "regione": "Baden-W\u00fcrttemberg"
+    },
+    {
+        "idcty": "3",
+        "city": "Odry",
+        "codlng": "3",
+        "lat": "49.662548",
+        "long": "17.83085",
+        "descrizione": "Odry \u00e8 una citt\u00e0 della Repubblica Ceca, nel distretto di Novy Jicin nella regione di Moravia-Slesia.",
+        "abitanti": "7467",
+        "area": "74.08",
+        "regione": "Moravia-Slesia"
+    },
+    {
+        "idcty": "4",
+        "city": "Arona",
+        "codlng": "1",
+        "lat": "45.758615",
+        "long": "8.558182",
+        "descrizione": "0",
+        "abitanti": "0",
+        "area": "0",
+        "regione": "Piemonte"
+    },
+    {
+        "idcty": "5",
+        "city": "Suno",
+        "codlng": "1",
+        "lat": "45.630829",
+        "long": "8.540775",
+        "descrizione": "Suno sorge nel cosiddetto \"medio novarese\", a circa 23 km da Novara e 10 km da Borgomanero, all'interno della valle del torrente Meja, che lo divide in due parti. Il territorio \u00e8 in buona parte collinare; su queste colline viene prodotta sia l'uva fragola (che d\u00e0 anche vita ad una tradizionale festa nel mese di agosto) sia il vino, il paese fa infatti parte delle Citt\u00e0 del vino.",
+        "abitanti": "2766",
+        "area": "21.33",
+        "regione": "Piemonte"
+    },
+    {
+        "idcty": "6",
+        "city": "Cureggio",
+        "codlng": "1",
+        "lat": "45.67627",
+        "long": "8.463174",
+        "descrizione": "Cureggio e\u2019 un comune della provincia di Novara nella regione italiana del Piemonte. Si trova a 90 km a nord rispetto a Torino e circa 30 km a nord rispetto a Novara\n",
+        "abitanti": "2624",
+        "area": "8.5",
+        "regione": "Piemonte"
+    }
+]
