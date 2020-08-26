@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Redirect, Route } from 'react-router-dom';
-import RouteWithLayout from './Components/RouteWithLayout/RouteWithLayout';
 
 //Layouts
 import MainLayout from './Layouts/Main/Main';
@@ -9,24 +8,29 @@ import MainLayout from './Layouts/Main/Main';
 import HomeView from './Views/Home/Home';
 import MapView from './Views/Map/Map';
 
+// const MapComponent = (
+//     <MainLayout>
+//         <HomeView />
+//     </MainLayout>
+// );
+
 const Routes = () => {
     return(
         <Switch>
             
             <Redirect from="/" to="/home" exact></Redirect>
 
-            <Route path="/home" exact>
+            <Route path="/home" exact render={(props) => (
+                    <MainLayout>
+                        <HomeView {...props} />
+                    </MainLayout>
+            )} />
+            
+            <Route path="/map" exact render={(props) => (
                 <MainLayout>
-                    <HomeView />
+                    <MapView {...props} />
                 </MainLayout>
-            </Route>
-
-            <RouteWithLayout
-                    component={MapView}
-                    exact
-                    layout={MainLayout}
-                    path="/map"
-            />
+            )} />
 
         </Switch>
     )

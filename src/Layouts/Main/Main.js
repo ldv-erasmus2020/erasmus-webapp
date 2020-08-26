@@ -35,24 +35,28 @@ const navPages = [
     {
       name: "IT Map",
       href: '/map',
-      icon: <Flag country="IT" style={{borderRadius: 0}} />
+      icon: <Flag country="IT" style={{borderRadius: 0}} />,
+      country: "it"
     },  
     {
       name: "DE Map",
       href: '/map',
-      icon: <Flag country="DE" />
+      icon: <Flag country="DE" />,
+      country: "de"
+
     },  
     {
       name: "CZ Map", 
       href: '/map',
-      icon: <Flag country="CZ" />
+      icon: <Flag country="CZ" />,
+      country: "cz"
     },  
   ],
   [
     {
       name: "Authors",
       href: '/authors',
-      icon: <AccessibilityNewIcon />
+      icon: <AccessibilityNewIcon />,
     }
   ]
 ];

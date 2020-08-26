@@ -9,6 +9,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
 
+import { Link } from "react-router-dom";
+
 const useStyles = makeStyles((theme) => ({
   list: {
     width: 250,
@@ -58,7 +60,7 @@ const MenuList = (props) => {
   const generateNavBlock = (navBlock) => {
     return (
       navBlock.map((item) => (
-        <ListItem button key={item.text}>
+        <ListItem button key={item.text} component={Link} to={item.href} country={item.country}>
           <ListItemIcon> {item.icon} </ListItemIcon>
           <ListItemText primary={item.name} />
         </ListItem>
