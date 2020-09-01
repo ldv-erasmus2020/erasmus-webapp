@@ -6,7 +6,7 @@ import MainLayout from './Layouts/Main/Main';
 
 //Views
 import HomeView from './Views/Home/Home';
-import MapView from './Views/Map/Map';
+import MapView from './Views/Map/MapPage';
 
 // const MapComponent = (
 //     <MainLayout>
@@ -21,9 +21,9 @@ const Routes = () => {
             <Redirect from="/" to="/home" exact></Redirect>
 
             <Route path="/home" exact render={(props) => (
-                    <MainLayout>
-                        <HomeView {...props} />
-                    </MainLayout>
+                <MainLayout>
+                    <HomeView {...props} />
+                </MainLayout>
             )} />
             
             <Route path="/map" exact render={(props) => (

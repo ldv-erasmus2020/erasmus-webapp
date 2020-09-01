@@ -27,38 +27,37 @@ const navPages = [
   [
     {
       name: "Home",
-      href: '/home',
-      icon: <HomeIcon />
+      href: "/home",
+      icon: <HomeIcon />,
     },
   ],
   [
     {
       name: "IT Map",
-      href: '/map',
-      icon: <Flag country="IT" style={{borderRadius: 0}} />,
-      country: "it"
-    },  
+      href: "/map",
+      icon: <Flag country="IT" style={{ borderRadius: 0 }} />,
+      countryId: 0,
+    },
     {
       name: "DE Map",
-      href: '/map',
+      href: "/map",
       icon: <Flag country="DE" />,
-      country: "de"
-
-    },  
+      countryId: 1,
+    },
     {
-      name: "CZ Map", 
-      href: '/map',
+      name: "CZ Map",
+      href: "/map",
       icon: <Flag country="CZ" />,
-      country: "cz"
-    },  
+      countryId: 2,
+    },
   ],
   [
     {
       name: "Authors",
-      href: '/authors',
+      href: "/authors",
       icon: <AccessibilityNewIcon />,
-    }
-  ]
+    },
+  ],
 ];
 
 

@@ -20,7 +20,54 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Menu(props) {
+const MenuList = (props) => {
+  const classes = useStyles();
+
+  const generateNavBlock = (navBlock) => {
+    return (
+      navBlock.map((item, i=0) => {
+        return (
+          <ListItem button key={item.text} component={Link} to={{
+            pathname: item.href,
+            state: {
+              countryId: item.countryId
+            }
+          }}>
+            <ListItemIcon> {item.icon} </ListItemIcon>
+            <ListItemText primary={item.name} />
+          </ListItem>
+        );})
+    );
+  }
+
+  return(
+    <div
+      className={classes.list}
+      role="presentation"
+      onClick={props.toggle(false)}
+      onKeyDown={props.toggle(false)}
+    >
+      {
+        //iterazione array per la creazione della lista nav
+        props.navPages.map((navBlock, index) => {
+          return (
+            <div>
+              <List>
+                {generateNavBlock(navBlock)}
+              </List>
+              {index === props.navPages.length-1 ? null : <Divider></Divider>}
+              
+            </div>
+          )
+        })
+      }
+
+    </div>
+  )
+ 
+}
+
+function Menu(props) {
     const classes = useStyles();
 
     const [menu, setMenu] = React.useState({
@@ -53,44 +100,4 @@ export default function Menu(props) {
     );
 }
 
-
-const MenuList = (props) => {
-  const classes = useStyles();
-
-  const generateNavBlock = (navBlock) => {
-    return (
-      navBlock.map((item) => (
-        <ListItem button key={item.text} component={Link} to={item.href} country={item.country}>
-          <ListItemIcon> {item.icon} </ListItemIcon>
-          <ListItemText primary={item.name} />
-        </ListItem>
-      ))
-    );
-  }
-
-  return(
-    <div
-      className={classes.list}
-      role="presentation"
-      onClick={props.toggle(false)}
-      onKeyDown={props.toggle(false)}
-    >
-      {
-        //iterazione array per la creazione della lista nav
-        props.navPages.map((navBlock, index) => {
-          return (
-            <div>
-              <List>
-                {generateNavBlock(navBlock)}
-              </List>
-              {index === props.navPages.length-1 ? null : <Divider></Divider>}
-              
-            </div>
-          )
-        })
-      }
-
-    </div>
-  )
- 
-}
+export default Menu;
