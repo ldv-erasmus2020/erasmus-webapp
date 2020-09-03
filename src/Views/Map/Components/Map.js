@@ -7,13 +7,16 @@ import luoghi from '../../../LocalDb/ERAluoghi.json';
 
 const MapCmp = (props) => {
   
-  const handleClick = event => {
-    props.setOpenDialog(true);
+  const handleClick = (event, data) => {
+    props.setDialogState({
+      open: true,
+      data: data
+    });
   }
 
   const Markers = luoghi.map((data) => {
     return (
-      <Marker position={[data.lat, data.long]} onClick={handleClick} ></Marker>
+      <Marker position={[data.lat, data.long]} onClick={(e) => handleClick(e, data)}></Marker>
     );
   }
   )
@@ -29,7 +32,7 @@ const MapCmp = (props) => {
   }
 
   return (
-    <Map center={[props.state.lat, props.state.lng]} zoom={props.state.zoom}>
+    <Map center={[props.mapState.lat, props.mapState.lng]} zoom={props.mapState.zoom}>
         <TileLayer
             attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

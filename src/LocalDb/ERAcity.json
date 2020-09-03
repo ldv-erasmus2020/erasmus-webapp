@@ -31,38 +31,5 @@
         "abitanti": "7467",
         "area": "74.08",
         "regione": "Moravia-Slesia"
-    },
-    {
-        "idcty": "4",
-        "city": "Arona",
-        "codlng": "1",
-        "lat": "45.758615",
-        "long": "8.558182",
-        "descrizione": "0",
-        "abitanti": "0",
-        "area": "0",
-        "regione": "Piemonte"
-    },
-    {
-        "idcty": "5",
-        "city": "Suno",
-        "codlng": "1",
-        "lat": "45.630829",
-        "long": "8.540775",
-        "descrizione": "Suno sorge nel cosiddetto \"medio novarese\", a circa 23 km da Novara e 10 km da Borgomanero, all'interno della valle del torrente Meja, che lo divide in due parti. Il territorio \u00e8 in buona parte collinare; su queste colline viene prodotta sia l'uva fragola (che d\u00e0 anche vita ad una tradizionale festa nel mese di agosto) sia il vino, il paese fa infatti parte delle Citt\u00e0 del vino.",
-        "abitanti": "2766",
-        "area": "21.33",
-        "regione": "Piemonte"
-    },
-    {
-        "idcty": "6",
-        "city": "Cureggio",
-        "codlng": "1",
-        "lat": "45.67627",
-        "long": "8.463174",
-        "descrizione": "Cureggio e\u2019 un comune della provincia di Novara nella regione italiana del Piemonte. Si trova a 90 km a nord rispetto a Torino e circa 30 km a nord rispetto a Novara\n",
-        "abitanti": "2624",
-        "area": "8.5",
-        "regione": "Piemonte"
     }
 ]

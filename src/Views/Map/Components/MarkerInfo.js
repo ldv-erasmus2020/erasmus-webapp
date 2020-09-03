@@ -89,15 +89,21 @@ const DialogActions = withStyles((theme) => ({
 export default function CustomizedDialogs(props) {
     const classes = useStyles();
 
+    // Updates only open/close dialog state, leaving data as it is
     const closeDialog = () => {
-        props.setOpenDialog(false);
+        props.setDialogState(prevState => {
+            return {...prevState, open: false}
+        });
     }
+
+    const getTitle = () => props.dialogState.data ? props.dialogState.data.luogo : "title"
 
     return (
         <div>
-            <Dialog onClose={closeDialog} aria-labelledby="customized-dialog-title" open={props.openDialog}>
+            <Dialog onClose={closeDialog} aria-labelledby="customized-dialog-title" open={props.dialogState.open}>
                 <DialogTitle id="customized-dialog-title" onClose={closeDialog}>
-                    Modal title
+                    {/* {props.dialogState.data ? "title" : props.dialogState.data.luogo} */}
+                    {getTitle()}
                 </DialogTitle>
                 <DialogContent dividers>
                     <CardMedia
