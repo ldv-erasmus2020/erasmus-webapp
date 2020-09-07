@@ -3,32 +3,25 @@
 import React, { Component } from 'react'
 import { Map, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
 
-import luoghi from '../../../LocalDb/ERAluoghi.json';
-
 const MapCmp = (props) => {
   
-  const handleClick = (event, data) => {
-    props.setDialogState({
-      open: true,
-      data: data
-    });
+  const handleMarkerClick = (event, id) => {
+    props.openDialog(id)
   }
 
-  const Markers = luoghi.map((data) => {
+  const Markers = props.markersState.map((marker) => {
     return (
-      <Marker position={[data.lat, data.long]} onClick={(e) => handleClick(e, data)}></Marker>
+      <Marker position={[marker.lat, marker.lng]} onClick={(e) => handleMarkerClick(e, marker.id)}></Marker>
     );
   }
   )
 
-  const polylineLuoghi = () => {
+  const generatePolylineData = () => {
     const coords = [];
-    luoghi.map((data) => {
-        if(data.codcty === "1"){
-            coords[data.ord-1] = [data.lat, data.long];
-        }
-    });
-    return(<Polyline positions={coords} ></Polyline>);
+    props.markersState.map((marker) => {
+      coords[marker.id] = [marker.lat, marker.lng];
+    })
+    return coords;
   }
 
   return (
@@ -39,8 +32,8 @@ const MapCmp = (props) => {
         />
         
         {Markers}
-        {polylineLuoghi()}
-        {/* {console.log(props)} */}
+        <Polyline positions={generatePolylineData()} ></Polyline>
+        
     </Map>
   );
 }

@@ -3,14 +3,14 @@
         "map": {
             "lat": 45.698747,
             "lng": 8.462415,
-            "zoom": 11
+            "zoom": 13
         },
         "sights": [
             {
-                "id": 0,
                 "marker": {
                     "lat": 45.675226,
-                    "lng": 8.46124
+                    "lng": 8.46124,
+                    "id": 0
                 },
                 "infos":{
                     "name": "Battistero",
@@ -19,10 +19,10 @@
                 }
             },
             {
-                "id": 1,
                 "marker": {
                     "lat": 45.681,
-                    "lng": 8.451819
+                    "lng": 8.451819,
+                    "id": 1
                 },
                 "infos": {
                     "name": "Colline Colombaro\/vigneti",
@@ -31,10 +31,10 @@
                 }
             },
             {
-                "id": 2,
                 "marker": {
                     "lat": 45.705228,
-                    "lng": 8.444678
+                    "lng": 8.444678,
+                    "id": 2
                 },
                 "infos": {
                     "name": "Vergano: Castello Tornielli",
@@ -43,10 +43,10 @@
                 }
             },
             {
-                "id": 3,
                 "marker": {
                     "lat": 45.703215,
-                    "lng": 8.459859
+                    "lng": 8.459859,
+                    "id": 3
                 },
                 "infos": {
                     "name": "Chiesa Santa Caterina\/Ponte dell'Araldo\/Lungo Agogna",
@@ -55,10 +55,10 @@
                 }
             },
             {
-                "id": 4,
                 "marker": {
                     "lat": 45.701521,
-                    "lng": 8.462446
+                    "lng": 8.462446,
+                    "id": 4
                 },
                 "infos": {
                     "name": "San Leonardo",
@@ -67,10 +67,10 @@
                 }
             },
             {
-                "id": 5,
                 "marker": {
                     "lat": 45.718396,
-                    "lng": 8.463643
+                    "lng": 8.463643,
+                    "id": 5
                 },
                 "infos": {
                     "name": "San Marco",
@@ -79,10 +79,10 @@
                 }
             },
             {
-                "id": 6,
                 "marker": {
                     "lat": 45.725448,
-                    "lng": 8.481528
+                    "lng": 8.481528,
+                    "id": 6
                 },
                 "infos": {
                     "name": "San Michele",
@@ -91,10 +91,10 @@
                 }
             },
             {
-                "id": 7,
                 "marker": {
                     "lat": 45.723943,
-                    "lng": 8.487332
+                    "lng": 8.487332,
+                    "id": 7
                 },
                 "infos": {
                     "name": "Casale Baraggiola",
@@ -103,10 +103,10 @@
                 }
             },
             {
-                "id": 8,
                 "marker": {
                     "lat": 45.704107,
-                    "lng": 8.493419
+                    "lng": 8.493419,
+                    "id": 8
                 },
                 "infos": {
                     "name": "Maggiate Inferiore",
@@ -115,10 +115,10 @@
                 }
             },
             {
-                "id": 9,
                 "marker": {
                     "lat": 45.697952,
-                    "lng": 8.491638
+                    "lng": 8.491638,
+                    "id": 9
                 },
                 "infos": {
                     "name": "Casale Coco",
@@ -127,10 +127,10 @@
                 }
             },
             {
-                "id": 10,
                 "marker": {
                     "lat": 45.686139,
-                    "lng": 8.498113
+                    "lng": 8.498113,
+                    "id": 10
                 },
                 "infos": {
                     "name": "Santa Cristina\/Museo Civilt\u00e0 Contadina",
@@ -139,10 +139,10 @@
                 }
             },
             {
-                "id": 11,
                 "marker": {
                     "lat": 45.698999,
-                    "lng": 8.462709
+                    "lng": 8.462709,
+                    "id": 11
                 },
                 "infos": {
                     "name": "San Bartolomeo",
@@ -154,10 +154,169 @@
     },
 
     "de": {
-
+        "map": {
+            "lat": 5.488537,
+            "lng": 8.470416,
+            "zoom": 10
+        },        
+        "map_real": {
+            "lat": 49.488537,
+            "lng": 9.770416,
+            "zoom": 14
+        },
+        "sights": [
+            {
+                "marker": {
+                    "lat": 5.675226,
+                    "lng": 8.46124,
+                    "id": 0
+                },
+                "infos":{
+                    "name": "Battistero",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.681,
+                    "lng": 8.451819,
+                    "id": 1
+                },
+                "infos": {
+                    "name": "Colline Colombaro\/vigneti",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.705228,
+                    "lng": 8.444678,
+                    "id": 2
+                },
+                "infos": {
+                    "name": "Vergano: Castello Tornielli",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.703215,
+                    "lng": 8.459859,
+                    "id": 3
+                },
+                "infos": {
+                    "name": "Chiesa Santa Caterina\/Ponte dell'Araldo\/Lungo Agogna",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.701521,
+                    "lng": 8.462446,
+                    "id": 4
+                },
+                "infos": {
+                    "name": "San Leonardo",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.718396,
+                    "lng": 8.463643,
+                    "id": 5
+                },
+                "infos": {
+                    "name": "San Marco",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.725448,
+                    "lng": 8.481528,
+                    "id": 6
+                },
+                "infos": {
+                    "name": "San Michele",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.723943,
+                    "lng": 8.487332,
+                    "id": 7
+                },
+                "infos": {
+                    "name": "Casale Baraggiola",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.704107,
+                    "lng": 8.493419,
+                    "id": 8
+                },
+                "infos": {
+                    "name": "Maggiate Inferiore",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.697952,
+                    "lng": 8.491638,
+                    "id": 9
+                },
+                "infos": {
+                    "name": "Casale Coco",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.686139,
+                    "lng": 8.498113,
+                    "id": 10
+                },
+                "infos": {
+                    "name": "Santa Cristina\/Museo Civilt\u00e0 Contadina",
+                    "desc": "",
+                    "img": ""
+                }
+            },
+            {
+                "marker": {
+                    "lat": 5.698999,
+                    "lng": 8.462709,
+                    "id": 11
+                },
+                "infos": {
+                    "name": "San Bartolomeo",
+                    "desc": "",
+                    "img": ""
+                }
+            }
+        ]
     },
 
     "cz": {
-
+        "map": {
+            "lat": 49.662548,
+            "lng": 17.83085,
+            "zoom": 14
+        }
     }
 }

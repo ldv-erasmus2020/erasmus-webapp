@@ -8,26 +8,25 @@ import MainLayout from './Layouts/Main/Main';
 import HomeView from './Views/Home/Home';
 import MapView from './Views/Map/MapPage';
 
-// const MapComponent = (
-//     <MainLayout>
-//         <HomeView />
-//     </MainLayout>
-// );
-
 const Routes = () => {
+    
+    const [langState, setLangState] = React.useState({
+        lang: 'en'
+    });
+
     return(
         <Switch>
             
             <Redirect from="/" to="/home" exact></Redirect>
 
             <Route path="/home" exact render={(props) => (
-                <MainLayout>
-                    <HomeView {...props} />
+                <MainLayout setLangState={setLangState}>
+                    <HomeView {...props} lang={langState}/>
                 </MainLayout>
             )} />
             
             <Route path="/map" exact render={(props) => (
-                <MainLayout>
+                <MainLayout setLangState={setLangState}>
                     <MapView {...props} />
                 </MainLayout>
             )} />

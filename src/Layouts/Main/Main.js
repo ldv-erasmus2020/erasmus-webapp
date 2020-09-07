@@ -9,6 +9,8 @@ import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
 import Flag from "react-flagkit";
 
 import Menu from './Components/Menu';
+import Language from './Components/Language';
+import Github from './Components/Github';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,19 +38,19 @@ const navPages = [
       name: "IT Map",
       href: "/map",
       icon: <Flag country="IT" style={{ borderRadius: 0 }} />,
-      countryId: 0,
+      countryId: "it",
     },
     {
       name: "DE Map",
       href: "/map",
       icon: <Flag country="DE" />,
-      countryId: 1,
+      countryId: "de",
     },
     {
       name: "CZ Map",
       href: "/map",
       icon: <Flag country="CZ" />,
-      countryId: 2,
+      countryId: "cz",
     },
   ],
   [
@@ -73,6 +75,9 @@ const Main = (props) => {
           <Typography variant="h6" className={classes.title}>
             Erasmus
           </Typography>
+          
+          <Language setLangState={props.setLangState}/>
+          <Github></Github>
         </Toolbar>
 
       </AppBar>

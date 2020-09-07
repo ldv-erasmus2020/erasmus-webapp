@@ -1,14 +1,17 @@
 TODO
 
+Done:
+- Restructioring local data
+- Rework of MapPage.js
+- *GOAL* > Get dialogs working
+- Dialogs buttons
+
 In progess:
-1 - Restructioring local data
-2 - Rework of MapPage.js
-3 - *GOAL* > Get dialogs MarkerInfos popups working
+- Language
 
 Ideas:
-- Country title
 - Navigation of markers (block under map)
+- Country title
 - User live location (GPS)
 - Creation of HomePage
-- Language
 - GoogleMaps integration

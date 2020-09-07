@@ -59,11 +59,11 @@ const DialogTitle = withStyles(styles)((props) => {
                     <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
                         <CloseIcon />
                     </IconButton>
-                    <IconButton aria-label="left" className={classes.leftButton}>
-                        <ChevronLeftIcon />
+                    <IconButton aria-label="left" className={classes.leftButton} onClick={() => props.changeDialog(-1)}>
+                        <ChevronLeftIcon/>
                     </IconButton>
-                    <IconButton aria-label="right" className={classes.rightButton}>
-                        <ChevronRightIcon />
+                    <IconButton aria-label="right" className={classes.rightButton} onClick={() => props.changeDialog(1)}>
+                        <ChevronRightIcon/>
                     </IconButton>    
                 </div>
             {/* ) : null} */}
@@ -89,20 +89,12 @@ const DialogActions = withStyles((theme) => ({
 export default function CustomizedDialogs(props) {
     const classes = useStyles();
 
-    // Updates only open/close dialog state, leaving data as it is
-    const closeDialog = () => {
-        props.setDialogState(prevState => {
-            return {...prevState, open: false}
-        });
-    }
-
-    const getTitle = () => props.dialogState.data ? props.dialogState.data.luogo : "title"
+    const getTitle = () => props.dialogState.data ? props.dialogState.data.name : "title"
 
     return (
         <div>
-            <Dialog onClose={closeDialog} aria-labelledby="customized-dialog-title" open={props.dialogState.open}>
-                <DialogTitle id="customized-dialog-title" onClose={closeDialog}>
-                    {/* {props.dialogState.data ? "title" : props.dialogState.data.luogo} */}
+            <Dialog onClose={props.closeDialog} aria-labelledby="customized-dialog-title" open={props.dialogState.open}>
+                <DialogTitle id="customized-dialog-title" onClose={props.closeDialog} changeDialog={props.changeDialog}>
                     {getTitle()}
                 </DialogTitle>
                 <DialogContent dividers>
